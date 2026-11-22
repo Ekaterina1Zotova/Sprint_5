@@ -40,6 +40,7 @@ class AuthFormLocators:
     LOGIN_LINK = (By.XPATH, './/*[contains(@class, "Auth_link")]')
     # Заголовок «Вход» — форма входа открыта
     AUTH_HEADING = (By.XPATH, ".//*[text()='Вход']")
+    AUTH_ERROR = (By.XPATH, ".//p[contains(@class, 'input__error')]")
 
 
 class PersonalAccountLocators:
@@ -62,3 +63,8 @@ class ConstructorLocators:
     SAUCES_TAB_ACTIVE = (By.XPATH, ".//div[contains(@class, 'tab_tab_type_current')][.//span[text()='Соусы']]")
     # Активная вкладка «Начинки»
     FILLINGS_TAB_ACTIVE = (By.XPATH, ".//div[contains(@class, 'tab_tab_type_current')][.//span[text()='Начинки']]")
+
+
+class ModalLocators:
+    # Оверлей модального окна — перехватывает клики, пока открыт или исчезает
+    OVERLAY = (By.XPATH, ".//div[contains(@class, 'Modal_modal_overlay')]")

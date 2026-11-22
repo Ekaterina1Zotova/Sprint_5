@@ -1,7 +1,9 @@
+
 .venv/
 
 __pycache__/
 *.pyc
+.pytest_cache/
 
 # Настройки IDE
 .idea/
@@ -9,3 +11,9 @@ __pycache__/
 
 # Драйверы и отчёты, если появятся
 *.log
+
+# Отчёты pytest и Playwright, если появятся
+pytest-report.html
+report.html
+allure-results/
+screenshots/
